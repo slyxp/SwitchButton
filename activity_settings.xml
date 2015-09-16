@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:defaultButton="http://schemas.android.com/apk/res/com.tcl.account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+    <com.tcl.account.ui.SuperButton
+        android:id="@+id/goto_sync_settings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        defaultButton:back_ground="@color/white" >
+
+        <ImageView
+            android:id="@+id/settings_sync_settings_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_sync_settings" >
+        </ImageView>
+
+        <TextView
+            style="@style/text_one"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@id/settings_sync_settings_iv"
+            android:layout_toRightOf="@id/settings_sync_settings_iv"
+            android:text="@string/sync_settings"
+            android:textSize="@dimen/account_manage_menu_text_size" />
+    </com.tcl.account.ui.SuperButton>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <com.tcl.account.ui.SuperButton
+        android:id="@+id/goto_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        defaultButton:back_ground="@color/white" >
+
+        <ImageView
+            android:id="@+id/settings_change_pwd_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_change_password" >
+        </ImageView>
+
+        <TextView
+            style="@style/text_one"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@id/settings_change_pwd_iv"
+            android:layout_toRightOf="@id/settings_change_pwd_iv"
+            android:text="@string/modify_password"
+            android:textSize="@dimen/account_manage_menu_text_size" />
+    </com.tcl.account.ui.SuperButton>
+
+    <View
+        style="@style/split_line"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+</LinearLayout>
